@@ -1,0 +1,49 @@
+<header>
+	<div class="container">
+		<div id="top-bar">
+			<div class="logo">
+				<a [routerLink]="['']">
+					<img src="./app/assets/img/SuperSports-Logo.png" alt="Logo">
+				</a>
+			</div>
+			<div class="info">
+				<ul>
+					<li><a href="tel:+45 22660077"><i class="fa fa-phone" aria-hidden="true"></i>+45 22660077</a></li>
+					<li><a href="mailto:lorem@ipsum.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>Lorem@Ipsum<span>.com</span></a></li>
+					<li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i>$ 0 <span>CHECKOUT</span></a>
+					</li>
+					<button type="button" class="navbar-toggle collapsed">
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+		          	</button>
+				</ul>
+			</div>
+		</div>
+	</div>
+		<div id="main-nav">
+			<div class="container">
+				<nav>
+					<ul>
+						<li class="dropdown"><a [routerLink]="['']">Home</a>
+							<ul>
+								<li><a>lorem</a></li>
+								<li><a>dorem sia</a></li>
+								<li><a>erik</a></li>
+								<li><a>ipsum padam</a></li>
+								<li><a>behance</a></li>
+							</ul>
+						</li>
+						<li><a>Men</a></li>
+						<li><a>Women</a></li>
+						<li><a>Kids</a></li>
+						<li><a>Sale</a></li>
+						<li><a>About us</a></li>
+						<li><a [routerLink]="['contact']">Support</a></li>
+						<li><i class="fa fa-search" aria-hidden="true"></i><input type="text" placeholder="Search..."></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="main-nav-border"></div>
+</header>

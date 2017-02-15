@@ -2,17 +2,17 @@
 	<div class="container basic-info">
 		<div class="col-xs-12 col-md-6 img-preview">
 			<div class="img-container preview">
-				<img src="./app/assets/img/shoe-big.jpg" alt="">
+				<img src="{{product.image[1]}}" alt="{{product.name}}">
 			</div>
 			<div class="gallery">
 				<div class="img-container">
-					<img src="./app/assets/img/shoe-side.jpg" alt="">
+					<img src="{{product.image[2]}}" alt="{{product.name}}">
 				</div>
 				<div class="img-container middle active">
-					<img src="./app/assets/img/shoe-atop.jpg" alt="">
+					<img src="{{product.image[3]}}" alt="{{product.name}}">
 				</div>
 				<div class="img-container">
-					<img src="./app/assets/img/shoe-front.jpg" alt="">
+					<img src="{{product.image[4]}}" alt="{{product.name}}">
 				</div>
 			</div>
 		</div>
@@ -23,10 +23,10 @@
 					<img src="./app/assets/img/asics-logo.png" alt="">
 				</div>
 				<div class="price-info">
-					<p class="price">kr 947.90</p>
+					<p class="price">{{ product.price - (product.price * product.discount) | number : '1.2-2' }}</p>
 					<div class="savings">
-						<p>kr 1115.24</p>
-						<p>You save 15.00%</p>
+						<p>{{product.price}}</p>
+						<p>You save {{(product.discount) * 100}}%</p>
 					</div>
 				</div>
 			</div>
@@ -34,10 +34,8 @@
 				<div class="inputs">
 					<div>
 						<label for="">Size</label>
-						<select name="" id="">
-							<option value="">EU 44 Black</option>
-							<option selected value="">EU 45 Black</option>
-							<option value="">EU 46 Black</option>
+						<select name="" id="" >
+							<option selected value="" *ngFor="let size of product.sizes">{{size}}</option>
 						</select>
 					</div>
 					<div>

@@ -4,4 +4,6 @@ import { Component } from '@angular/core';
   selector: 'site-header',
   templateUrl: './app/site-header/site-header.component.html'
 })
-export class SiteHeaderComponent  { }
+export class SiteHeaderComponent  {
+
+ }

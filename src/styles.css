@@ -373,7 +373,8 @@ footer {
   color: #f45a40; }
 
 .popular-products .product {
-  padding: 5px 15px 0 15px; }
+  padding: 5px 15px 0 15px;
+  margin-bottom: 50px; }
   @media screen and (max-width: 1000px) {
     .popular-products .product {
       margin-bottom: 20px; } }
@@ -521,7 +522,8 @@ footer {
       #contact form div:first-of-type {
         margin-bottom: 15px; }
     #contact form label {
-      width: 100px; }
+      width: 100px;
+      color: #7e7f84; }
     #contact form input {
       padding: 10px;
       height: 35px;
@@ -774,3 +776,23 @@ a {
 
 :-ms-input-placeholder {
   color: #7e7f84; }
+
+.ng-valid {
+  color: #7e7f84;
+}
+
+.ng-invalid {
+  color:red;
+}
+
+.form-succes {
+  margin-bottom: 50px;
+}
+
+.form-succes h2 {
+  font-size: 20px;
+}
+
+.form-succes li {
+  font-size: 16px;
+}

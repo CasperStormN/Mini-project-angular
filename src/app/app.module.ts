@@ -10,6 +10,7 @@ import { FrontComponent }  from './front/front.component';
 import { ContactComponent }  from './contact/contact.component';
 import { SingleComponent }  from './single/single.component';
 
+import { DataService } from './shared/data.service';
 
 @NgModule({
   imports:      [ 
@@ -18,7 +19,7 @@ import { SingleComponent }  from './single/single.component';
   	RouterModule.forRoot([
 		{ path:'', component:FrontComponent },
 		{ path:'contact', component:ContactComponent },
-		{ path:'single', component:SingleComponent },
+		{ path:'single/:id', component:SingleComponent },
 		{ path:'', redirectTo: '', pathMatch: 'full' },
 		{ path:'**', redirectTo: '', pathMatch: 'full' }
 	]) 
@@ -32,6 +33,7 @@ import { SingleComponent }  from './single/single.component';
   	SingleComponent,
 
   ],
+  providers: [DataService],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

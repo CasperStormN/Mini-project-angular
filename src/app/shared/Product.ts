@@ -5,6 +5,7 @@ export interface IProduct {
 	image: Array<string>,
 	starrating: number,
 	price: number,
+	discount: number,
 	sizes: Array<string>,
 	makerlogo: string,
 	type: string,
